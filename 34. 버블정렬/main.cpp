@@ -20,12 +20,12 @@ int main(int argc, char** argv) {
 	{
 		for(int j =  0; j < n - i - 1; j++)
 		{
-			if(arr[j] > 0 && arr[j + 1] < 0)
+			if(arr[j] > arr[j + 1])
 			{
 				int temp = arr[j + 1];
 				arr[j + 1] = arr[j];
 				arr[j] = temp;
-			}	
+			}
 		}
 	}
 	
