@@ -37,7 +37,7 @@ void DFS(int lt, int rt)
 }
 
 int main(int argc, char** argv) {
-	freopen("input.txt","rt", stdin);
+	//freopen("input.txt","rt", stdin);
 
 	scanf("%d", &N);
 	for(int i = 0; i < N; i++)
