@@ -1,9 +1,2 @@
 7
-book
-dog
-cat
-dog
-cat
-book
-cat
 
