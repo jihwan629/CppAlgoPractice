@@ -11,24 +11,20 @@ int main(int argc, char** argv) {
 	//freopen("input.txt","rt", stdin);
 	
 	char inp [101];
-	map<string, int> ch;
-	map<string, int>::iterator it;
+	map<char, int> ch;
+	map<char, int>::iterator it;
 	
-	int N;
-	scanf("%d", &N);
+	scanf("%s", &inp);
 	
-	string tmp;
-	for(int i = 0; i < N; i++)
+	for(int i = 0; inp[i] != '\0'; i++)
 	{
-		scanf("%s", inp);
-		tmp = inp;
-		ch[tmp]++;
+		ch[inp[i]]++;
 	}
 	
 	for(it = ch.begin(); it != ch.end(); it++)
 	{
-		printf("%s : %d\n", 
-				it->first.c_str(), it->second);
+		printf("%c : %d\n", 
+				it->first, it->second);
 	}
 	
 	return 0;
